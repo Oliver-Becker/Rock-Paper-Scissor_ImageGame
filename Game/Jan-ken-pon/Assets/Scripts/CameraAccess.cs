@@ -19,7 +19,9 @@ public class CameraAccess : MonoBehaviour {
 	public bool frontFacing;
 
 	public string imgPath = "/Pictures/Jankenpon/";
-	public string photoName = "test.png";
+	public string photoName = "test.jpg";
+
+	public AppLauncher appLauncher;
 
 	void Start() {
 		defaultBackground = camRenderer.texture;
@@ -140,13 +142,18 @@ public class CameraAccess : MonoBehaviour {
 		photo.SetPixels(currentCam.GetPixels());
 		photo.Apply();
 
-		SavePNG(photo, imgPath, photoName);
+		SaveJPG(photo, imgPath, photoName);
 
 		StopCamera();
+
+		Debug.Log("Argv to the python file = " + imgPath + photoName);
+		Debug.Log("The log BEFORE trying to call the python file.");
+		//appLauncher.StartProcess(imgPath + photoName);
+		Debug.Log("AFTER the python file call");
 	}
 
-	public void SavePNG(Texture2D photo, string path, string fileName) {
-		byte[] bytes = photo.EncodeToPNG();
+	public void SaveJPG(Texture2D photo, string path, string fileName) {
+		byte[] bytes = photo.EncodeToJPG();
 		if (!Directory.Exists(path)) {
 			Directory.CreateDirectory(path);
 		}
