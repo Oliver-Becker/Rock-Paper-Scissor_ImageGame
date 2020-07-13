@@ -1,8 +1,17 @@
 # Rock-Paper-Scissor_ImageGame
 
 Final project for SCC0251 - Image Processing @ ICMC/USP.
-* 10284890 - Óliver Savastano Becker
-* 10295412 - Rafael Farias Roque
+* 10284890 - Óliver Savastano Becker (Image Filtering, DataSet creation, Unity Aplication)
+* 10295412 - Rafael Farias Roque (Image Filtering, DataSet creation, Classifier)
+
+# Files
+* Demo.ipynb contains the usege a damonstraition of the working classification code
+* Classifier.ipynb contains the creation and training of the classifier
+* DataSet.ipynb contains the creation of a dataset based on the images in the 'fotos' folder
+* ModelTest.ipynb contains a base line for the application script
+* RockPaperScissor.ipynb contains a test of all ideas for the project
+
+(The project was develop using Google CoLab and Google Drive and the commits do not represent the project colaboration)
 
 # Abstract
 
@@ -38,3 +47,4 @@ The classifier used in the program was the MultiLayer Perceptron provided by the
 With the original pre-processing we achieved an accuracy that was around 17%, we tested several configurations of classifiers, but none had a significant improvement. After applying the LBP we had a small improvement, reaching an accuracy of 38%, but it was not yet an adequate value for the application.
 With the HOG we had a great performance, reaching 73% accuracy. We decided to increase the data set, as we had a small data set. With the additions, the accuracy dropped to 72%, a minor drop as the data set increased six times.
 
+About the application (the game implementation), we are stuck at the communication between the game engine and our python classifier. We are still trying to fix this in order to be able to finish the game.
