@@ -4,6 +4,8 @@ Final project for SCC0251 - Image Processing @ ICMC/USP.
 * 10284890 - Óliver Savastano Becker (Image Filtering, DataSet creation, Unity Aplication)
 * 10295412 - Rafael Farias Roque (Image Filtering, DataSet creation, Classifier)
 
+Youtube presentation video: https://youtu.be/DrUX3xpl2XQ
+
 # Files
 * Demo.ipynb contains the usege a damonstraition of the working classification code
 * Classifier.ipynb contains the creation and training of the classifier
