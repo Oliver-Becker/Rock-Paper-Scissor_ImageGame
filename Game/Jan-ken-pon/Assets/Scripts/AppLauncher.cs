@@ -12,7 +12,7 @@ public class AppLauncher : MonoBehaviour {
         try {
             process = new Process();
             process.EnableRaisingEvents = false;
-            process.StartInfo.FileName = pythonFilePath;
+            process.StartInfo.FileName = "python " + pythonFilePath;
             process.StartInfo.UseShellExecute = false;
             process.StartInfo.RedirectStandardOutput = true;
             process.StartInfo.RedirectStandardInput = true;

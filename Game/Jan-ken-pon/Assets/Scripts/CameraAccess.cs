@@ -148,7 +148,7 @@ public class CameraAccess : MonoBehaviour {
 
 		Debug.Log("Argv to the python file = " + imgPath + photoName);
 		Debug.Log("The log BEFORE trying to call the python file.");
-		//appLauncher.StartProcess(imgPath + photoName);
+		appLauncher.StartProcess(imgPath + photoName);
 		Debug.Log("AFTER the python file call");
 	}
 
